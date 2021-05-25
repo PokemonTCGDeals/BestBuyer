@@ -4,11 +4,12 @@
    from [support.google](https://support.google.com/accounts/answer/185833?hl=en.)
    or [devanswers](https://devanswers.co/create-application-specific-password-gmail/). If you don't trust doing this on
    your main email account, consider creating a new gmail account for this purpose.
-2. Open up constants.py. Set the SENDER and SUPER_SECRET_PASSWORD strings to be your email address and app password,
+2. Clone this repository into a local directory.
+3. Open up constants.py. Set the SENDER and SUPER_SECRET_PASSWORD strings to be your email address and app password,
    respectively. Note: your Gmail password is NOT an app password!
-3. Add all email recipients to CHANGE_LISTENERS. Maybe you want to add all your friends who are also looking for product
+4. Add all email recipients to CHANGE_LISTENERS. Maybe you want to add all your friends who are also looking for product
    updates or just yourself.
-4. Add a list of emails (or just 1) to ADMINS. These emails will receive an hourly monitoring email as well as an email
+5. Add a list of emails (or just 1) to ADMINS. These emails will receive an hourly monitoring email as well as an email
    if the main loop crashes (although the loop will wait and retry on crash). If you don't want to receive these emails,
    leave this blank or deactivate the ACTIVATE_HOURLY_MONITORING constant.
 
